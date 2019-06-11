@@ -1,4 +1,4 @@
-class StudentController < ActiveRecord::Base
+class StudentsController < ActiveRecord::Base
 
   get '/students' do
     erb :index
