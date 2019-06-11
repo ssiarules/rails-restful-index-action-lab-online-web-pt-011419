@@ -1,6 +1,7 @@
 class StudentsController < ActiveRecord::Base
 
-  get '/students' do
-    erb :index
+  def index
+    @students = Student.all
+    render "index"
   end
 end
